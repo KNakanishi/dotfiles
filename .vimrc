@@ -68,6 +68,7 @@ set softtabstop=2
 set expandtab
 " <Tab>が対応する空白の数
 set tabstop=2
+set nopaste
 
 " マウス使えます
 set mouse=a
@@ -77,8 +78,15 @@ imap [ []<left>
 imap ( ()<left>
 imap { {}<left>
 
+" 挿入モード時のカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
 " ２回esc を押したら検索のハイライトをヤメる
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " backspaceで文字を消せるようにする
 set bs=start,indent
+set backspace=2
 
