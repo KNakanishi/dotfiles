@@ -77,6 +77,8 @@ set mouse=a
 imap [ []<left>
 imap ( ()<left>
 imap { {}<left>
+imap " ""<left>
+imap ' ''<left>
 
 " 挿入モード時のカーソル移動
 inoremap <C-j> <Down>
