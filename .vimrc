@@ -93,3 +93,8 @@ set backspace=2
 " grepで検索した場合に、検索結果一覧を別画面で表示
 autocmd QuickFixCmdPost *grep* cwindow
 
+nnoremap gh <C-W><C-H>
+nnoremap gj <C-W><C-J>
+nnoremap gk <C-W><C-K>
+nnoremap gl <C-W><C-L>
+nnoremap gg <C-W><C-W>
