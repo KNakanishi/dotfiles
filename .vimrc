@@ -89,3 +89,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " backspaceで文字を消せるようにする
 set bs=start,indent
 set backspace=2
+
+" grepで検索した場合に、検索結果一覧を別画面で表示
+autocmd QuickFixCmdPost *grep* cwindow
+
