@@ -77,8 +77,6 @@ set mouse=a
 imap [ []<left>
 imap ( ()<left>
 imap { {}<left>
-imap " ""<left>
-imap ' ''<left>
 
 " 挿入モード時のカーソル移動
 inoremap <C-j> <Down>
@@ -91,4 +89,3 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " backspaceで文字を消せるようにする
 set bs=start,indent
 set backspace=2
-
