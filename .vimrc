@@ -98,3 +98,8 @@ nnoremap gj <C-W><C-J>
 nnoremap gk <C-W><C-K>
 nnoremap gl <C-W><C-L>
 nnoremap gg <C-W><C-W>
+
+" vimgrepのシュートカット：カーソル位置の単語を検索
+nnoremap <expr> gr ':vimgrep ;\<' . expand('<cword>') . '\>; '
+" 現在開いているファイルに対してカーソル位置の単語を検索
+nnoremap <expr> hgr ':vimgrep ;\<' . expand('<cword>') . '\>; % '
