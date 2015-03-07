@@ -21,6 +21,11 @@ NeoBundle 'tpope/vim-rails'
 NeoBundleLazy 'basyura/unite-rails'
 NeoBundleLazy 'Shougo/neosnippet'
 
+" ファイルをtree表示してくれる
+NeoBundle 'scrooloose/nerdtree'
+" Ctrl+eでツリーが開くように設定
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
 " vimrcに記述されたプラグインでインストールされていないものがないかチェックする
 NeoBundleCheck
 call neobundle#end()
