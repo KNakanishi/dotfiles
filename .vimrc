@@ -108,3 +108,6 @@ nnoremap gg <C-W><C-W>
 nnoremap <expr> gr ':vimgrep ;\<' . expand('<cword>') . '\>; '
 " 現在開いているファイルに対してカーソル位置の単語を検索
 nnoremap <expr> hgr ':vimgrep ;\<' . expand('<cword>') . '\>; % '
+
+" スクロールする時に上下の行が見えるようにする
+set scrolloff=10
