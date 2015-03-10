@@ -111,3 +111,6 @@ nnoremap <expr> hgr ':vimgrep ;\<' . expand('<cword>') . '\>; % '
 
 " スクロールする時に上下の行が見えるようにする
 set scrolloff=10
+
+" カーソル移動で行をまたいで文末文頭を移動
+set whichwrap=b,s,h,l,<,>,[,],~
